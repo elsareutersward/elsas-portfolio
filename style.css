@@ -43,6 +43,7 @@ header {
 
 .header-text {
     color: #FFFFFF;
+    align-self: flex-start;
 }
 
 .header-text h3 {
@@ -87,7 +88,8 @@ section {
 }
 
 .section-container {
-    margin: 40px 40px 20px 40px;
+    width: 80%;
+    margin: 40px auto 20px auto;
 }
 
 .grey {
@@ -185,6 +187,15 @@ h4 {
     padding: 3px 5px;
 }
 
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-cards {
+    display: none;
+}
+
 
 /* My thoughts */
 .thoughts-cards {
@@ -206,7 +217,14 @@ h4 {
     text-align: justify;
 }
 
+.my-thoughts {
+    display: flex;
+    flex-direction: column;
+}
 
+.my-thoughts-card {
+    display: none;
+}
 
 /* Skills */
 .skills-container {
@@ -240,13 +258,14 @@ ul {
 /* For more */
 .section-icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .section-icons a:link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 102px;
@@ -260,9 +279,9 @@ ul {
 }
 
 .section-icons-div img {
-    padding: 18px;
+    padding: 19px;
     height: 22px;
-    width: 22px;
+    width: 20px;
 }
 
 h6 {
@@ -298,4 +317,189 @@ footer {
 
 .contact-info span {
     font-weight: bold;
+}
+
+
+/***** Media Queries *****/
+@media (min-width: 768px) { 
+    .header-container {
+        width: 461px;
+    }
+
+    .section-container {
+        width: 60%;
+        margin: 40px auto 20px auto;
+    }
+
+    .featured-projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .featured-cards-all {
+        width: 45%;
+    }
+    
+    .featured-cards {
+        display: initial;
+    }
+
+    .my-thoughts {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .my-thoughts-card-all {
+        width: 45%;
+    }
+    
+    .my-thoughts-card {
+        display: initial;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        margin-bottom: 8px;
+    }
+
+    .header-container {
+        width: 600px;
+    }
+
+    .header-text h3 {
+        font-size: 20px;
+    }
+    
+    .header-text h1 {
+        font-size: 55px;
+    }
+    
+    .header-text h2 {
+        font-size: 30px;
+    }
+
+    .profile-pic {
+        height: 180px;
+        width: 180px;
+        top: 340px;
+    }
+
+    .header-icons {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .header-icons img {
+        height: 29px;
+        width: 27px;
+        padding: 11px;
+    }
+    
+    .section-container {
+        width: 43%;
+    }
+
+    .portfolio-section p {
+        font-size: 20px;
+    }
+    
+    .featured-projects {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured-cards-all {
+            width: 45%;
+    }
+
+    .my-thoughts {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-thoughts-card-all {
+        width: 45%;
+    }
+
+    .skills-container {
+        width: 80%;
+    }
+
+    .skills-container div {
+        width: 20%;
+    }
+
+    .section-icons-div {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .section-icons-div img {
+        padding: 20px;
+        height: 32px;
+        width: 30px;
+    }
+
+    .heading-footer {
+        font-size: 23px;
+    }
+    
+    .contact-info {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        height: 600px;
+        background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-size: contain;
+    }
+
+    .header-container {
+        margin-bottom: 0px;
+        margin-top: 100px;
+    }
+
+    .header-icons {
+        height: 57px;
+        width: 57px;
+    }
+    
+    .header-icons img {
+        height: 35px;
+        width: 33px;
+        padding: 11px;
+    }
+
+    .profile-pic {
+        height: 200px;
+        width: 200px;
+        top: 415px;
+    }
+
+    .section-container {
+        width: 30%;
+    }
+
+    .featured-projects {
+        width: 40%;
+    }
+
+    .featured-cards-all {
+            width: 45%;
+    }
+
+    .my-thoughts {
+        width: 40%;
+    }
+
+    .my-thoughts-card-all {
+        width: 45%;
+    }
 }
