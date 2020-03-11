@@ -18,13 +18,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space space-around;
-    margin: 40px;
+    justify-content: space-between;
+    margin: 12% 40px 0px 40px;
 }
 
 .header-icons-container {
     display: flex;
-    margin: 40px 0px;
+    margin: 0px;
 }
 
 .header-icons {
@@ -41,37 +41,39 @@ header {
     padding: 11px;
 }
 
+.header-icons:hover {
+    opacity: 0.7;
+}
+
 .header-text {
     color: #FFFFFF;
     align-self: flex-start;
 }
 
-.header-text h3 {
+.header-text h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 16px;
     margin: 0px;
 }
 
-.header-text h3 span {
+.header-text h1 span {
     font-weight: bold;
 }
 
-.header-text h1 {
+.header-text h2 {
     font-family: 'Montserrat', sans-serif, bold;
     font-size: 40px;
     margin: 0px;
 }
 
-.header-text h2 {
+.header-text h3 {
     font-family: 'Montserrat', sans-serif, bold;
     font-size: 24px;
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .profile-pic {
-    position: absolute;
-    top: 355px;
     background-image: url(https://images.unsplash.com/photo-1490718720478-364a07a997cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,6 +81,7 @@ header {
     border-radius: 50%;
     height: 162px;
     width: 162px;
+    margin: -10px;
 }
 
 
@@ -118,6 +121,17 @@ h4 {
 .portfolio-section p {
     font-size: 18px;
     line-height: 29px;
+    color: black;
+}
+
+section a:link {
+    text-decoration: none;
+}
+
+section a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+    color: rgba(250, 57, 47, 0.39);
 }
 
 
@@ -161,6 +175,7 @@ h4 {
 
 .project-cards img {
     width: 100%;
+    height: 60%
 }
 
 .project-title {
@@ -338,25 +353,17 @@ footer {
         justify-content: space-evenly;
     }
 
-    .featured-cards-all {
+    .featured-cards-all, .my-thoughts-card-all {
         width: 45%;
     }
     
-    .featured-cards {
+    .featured-cards, .my-thoughts-card {
         display: initial;
     }
 
     .my-thoughts {
         display: flex;
         flex-direction: row;
-    }
-
-    .my-thoughts-card-all {
-        width: 45%;
-    }
-    
-    .my-thoughts-card {
-        display: initial;
     }
 }
 
@@ -369,22 +376,21 @@ footer {
         width: 600px;
     }
 
-    .header-text h3 {
+    .header-text h1, .portfolio-section p, .contact-info {
         font-size: 20px;
     }
     
-    .header-text h1 {
+    .header-text h2 {
         font-size: 55px;
     }
     
-    .header-text h2 {
+    .header-text h3 {
         font-size: 30px;
     }
 
     .profile-pic {
         height: 180px;
         width: 180px;
-        top: 340px;
     }
 
     .header-icons {
@@ -402,27 +408,13 @@ footer {
         width: 43%;
     }
 
-    .portfolio-section p {
-        font-size: 20px;
-    }
-    
-    .featured-projects {
+    .featured-projects, .my-thoughts {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .featured-cards-all {
-            width: 45%;
-    }
-
-    .my-thoughts {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .my-thoughts-card-all {
+    .featured-cards-all, .my-thoughts-card-all {
         width: 45%;
     }
 
@@ -448,10 +440,6 @@ footer {
     .heading-footer {
         font-size: 23px;
     }
-    
-    .contact-info {
-        font-size: 20px;
-    }
 }
 
 @media (min-width: 1440px) {
@@ -474,32 +462,23 @@ footer {
     .header-icons img {
         height: 35px;
         width: 33px;
-        padding: 11px;
     }
 
     .profile-pic {
         height: 200px;
         width: 200px;
-        top: 415px;
+        margin: -15px;
     }
 
     .section-container {
         width: 30%;
     }
 
-    .featured-projects {
+    .featured-projects, .my-thoughts {
         width: 40%;
     }
 
-    .featured-cards-all {
-            width: 45%;
-    }
-
-    .my-thoughts {
-        width: 40%;
-    }
-
-    .my-thoughts-card-all {
+    .featured-cards-all, .my-thoughts-card-all {
         width: 45%;
     }
 }
