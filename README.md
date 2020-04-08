@@ -8,4 +8,4 @@ The portfolio is built using HTML and CSS, following a set design while also inc
 
 ## View it live
 
-https://happy-mayer-66a833.netlify.com
+https://elsa-reutersward-portfolio.netlify.com/
