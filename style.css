@@ -6,8 +6,11 @@ body {
 header {
     height: 508px;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(assets/ballons.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 3px;
@@ -47,6 +50,7 @@ header {
 
 .header-text {
     color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgb(0, 65, 61);
     align-self: flex-start;
 }
 
@@ -167,6 +171,10 @@ section a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+.content span {
+    color: #FA382F;
+}
+
 
 /* Projects */
 .project-cards {
@@ -175,7 +183,7 @@ section a:hover {
 
 .project-cards img {
     width: 100%;
-    height: 60%
+    height: 65%
 }
 
 .project-title {
@@ -210,7 +218,6 @@ section a:hover {
 .featured-cards {
     display: none;
 }
-
 
 /* My thoughts */
 .thoughts-cards {
@@ -361,6 +368,14 @@ footer {
         display: initial;
     }
 
+    .featured-cards {
+        margin-bottom: 50px;
+    }
+
+    .other-cards {
+        display: none;
+    }
+
     .my-thoughts {
         display: flex;
         flex-direction: row;
@@ -409,7 +424,7 @@ footer {
     }
 
     .featured-projects, .my-thoughts {
-        width: 60%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -445,8 +460,6 @@ footer {
 @media (min-width: 1440px) {
     header {
         height: 600px;
-        background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-        background-size: contain;
     }
 
     .header-container {
@@ -471,11 +484,11 @@ footer {
     }
 
     .section-container {
-        width: 30%;
+        width: 40%;
     }
 
     .featured-projects, .my-thoughts {
-        width: 40%;
+        width: 50%;
     }
 
     .featured-cards-all, .my-thoughts-card-all {
