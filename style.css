@@ -4,19 +4,28 @@ body {
 
 /***** Header *****/
 header {
-    height: 508px;
-    width: 100%;
-    background-image: url(assets/ballons.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
+    height: 508px;
     display: flex;
     justify-content: center;
     margin-bottom: 3px;
 }
 
+.hero-image {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/ballons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(40%);
+}
+
 .header-container {
+    position: relative;
     width: 357px;
     display: flex;
     flex-direction: column;
@@ -36,6 +45,7 @@ header {
     height: 39px;
     width: 39px;
     margin: 3px;
+    box-shadow: 1px 1px 1px rgb(0, 65, 61);
 }
 
 .header-icons img {
@@ -100,7 +110,7 @@ section {
 }
 
 .grey {
-    background-color: #F4F4F4;
+    background-color: rgb(241, 244, 244);
 }
 
 h4 {
@@ -111,13 +121,13 @@ h4 {
 }
 
 .heading-red {
-    background-color: #FA382F;
+    background-color: #de7119;
     color: #FFFFFF;
     font-size: 22px;
 }
 
 .heading-white {
-    color: #FA382F;
+    color: #de7119;
     font-size: 21px;
     margin-top: 50px;
 }
@@ -190,6 +200,7 @@ section a:hover {
 .project-cards img {
     width: 100%;
     height: 100%;
+    filter: grayscale(30%)
 }
 
 .filter-image {
@@ -198,7 +209,7 @@ section a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,11 +347,12 @@ h6 {
     font-family: 'Montserrat', sans-serif, bold;
     color: #FA382F; 
     margin: 15px 0px;
+    font-size: 12px;
 }
 
 /***** Footer *****/
 footer {
-    background-color: #072BCE;
+    background-color: teal;
     color: #FFFFFF;
     height: 266px;
     display: flex;
