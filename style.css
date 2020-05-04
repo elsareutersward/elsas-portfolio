@@ -17,11 +17,11 @@ header {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(assets/ballons.jpg);
+    background-image: url(assets/yellow-wall.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(30%);
+    filter: grayscale(35%);
 }
 
 .header-container {
@@ -42,16 +42,16 @@ header {
 .header-icons {
     border: 3px solid #FFFFFF;
     border-radius: 50%;
-    height: 39px;
-    width: 39px;
+    height: 50px;
+    width: 50px;
     margin: 3px;
-    box-shadow: 1px 1px 1px rgb(0, 65, 61);
+    box-shadow: 1px 1px 1px rgb(173, 141, 0);
 }
 
 .header-icons img {
-    height: 19px;
-    width: 17px;
-    padding: 11px;
+    height: 23px;
+    width: 21px;
+    padding: 12px 14px;
 }
 
 .header-icons:hover {
@@ -60,14 +60,14 @@ header {
 
 .header-text {
     color: #FFFFFF;
-    text-shadow: 1px 1px 1px rgb(0, 65, 61);
+    text-shadow: 1px 1px 1px rgb(136, 104, 0);
     align-self: flex-start;
 }
 
 .header-text h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0px;
 }
 
@@ -88,9 +88,11 @@ header {
 }
 
 .profile-pic {
-    background-image: url(assets/profilbild.jpg);
+    background-image: url(assets/profilepic.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(140, 160, 160);
     border: 3px solid #FFFFFF;
     border-radius: 50%;
     height: 162px;
@@ -121,7 +123,7 @@ h4 {
 }
 
 .heading-red {
-    background-color: rgb(255, 87, 51);
+    background-color: #f37777;
     color: #FFFFFF;
     font-size: 22px;
 }
@@ -145,7 +147,7 @@ section a:link {
 section a:hover {
     opacity: 0.7;
     text-decoration: underline;
-    color: rgb(255, 87, 51);
+    color: #f37777;
 }
 
 
@@ -158,7 +160,7 @@ section a:hover {
 .line-dot {
     height: 3px;
     width: 50px;
-    background-color: #16817a;
+    background-color: #f37777;
     position: relative;
     float: left;
     top: 12px;
@@ -168,7 +170,7 @@ section a:hover {
 .line-dot::after {
     height: 11px;
     width: 11px;
-    background-color: #16817a;
+    background-color: #f37777;
     border-radius: 50%;
     position: relative;
     content: "";
@@ -182,7 +184,7 @@ section a:hover {
 }
 
 .content span {
-    color: rgb(255, 87, 51);
+    color: #f37777;
 }
 
 
@@ -225,12 +227,12 @@ section a:hover {
 
 .project-title {
     font-weight: bold;
-    color: rgb(255, 87, 51);
+    color: #f37777;
 }
 
 .project-title-arrows {
     font-weight: bold;
-    color: rgb(255, 87, 51);
+    color: #f37777;
     text-decoration: underline;
 }
 
@@ -271,7 +273,7 @@ section a:hover {
 
 .thoughts-title {
     font-weight: lighter;
-    color: rgb(255, 87, 51);
+    color: #f37777;
 }
 
 .thoughts-text {
@@ -334,7 +336,7 @@ ul {
 }
 
 .section-icons-div {
-    border: 3px solid rgb(255, 87, 51);
+    border: 3px solid #16817a;
     border-radius: 50%;
     height: 58px;
     width: 58px;
@@ -348,9 +350,9 @@ ul {
 
 h6 {
     font-family: 'Montserrat', sans-serif, bold;
-    color: rgb(255, 87, 51); 
+    color: #16817a; 
     margin: 15px 0px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 /***** Footer *****/
@@ -429,15 +431,15 @@ footer {
     }
 
     .header-container {
-        width: 600px;
+        width: 700px;
     }
 
-    .header-text h1, .portfolio-section p, .contact-info {
-        font-size: 20px;
+    .header-text h1 {
+        font-size: 25px;
     }
     
     .header-text h2 {
-        font-size: 55px;
+        font-size: 70px;
     }
     
     .header-text h3 {
@@ -445,21 +447,25 @@ footer {
     }
 
     .profile-pic {
-        height: 180px;
-        width: 180px;
+        height: 200px;
+        width: 200px;
     }
 
     .header-icons {
-        height: 50px;
-        width: 50px;
+        height: 65px;
+        width: 65px;
     }
     
     .header-icons img {
-        height: 29px;
-        width: 27px;
-        padding: 11px;
+        height: 38px;
+        width: 36px;
+        padding: 12px 14px;
     }
     
+    .portfolio-section p, .contact-info {
+        font-size: 20px;
+    }
+
     .section-container {
         width: 43%;
     }
@@ -506,16 +512,6 @@ footer {
     .header-container {
         margin-bottom: 0px;
         margin-top: 100px;
-    }
-
-    .header-icons {
-        height: 57px;
-        width: 57px;
-    }
-    
-    .header-icons img {
-        height: 35px;
-        width: 33px;
     }
 
     .profile-pic {
