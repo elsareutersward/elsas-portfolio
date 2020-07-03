@@ -242,6 +242,7 @@ section a:hover {
 .code-language-cards-container {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .code-language-cards {
@@ -431,6 +432,7 @@ footer {
 @media (min-width: 1024px) {
     header {
         margin-bottom: 8px;
+        height: 600px;
     }
 
     .header-container {
